@@ -1,12 +1,96 @@
 /*
-  Theme Name: monprecieux
-  Description: Thème enfant du thème TwentyTwenty-Three 
-  Author: Nadia Hazem
-  Author URI: https://nadia-hazem.students@laplateforme.io
-  Template: Twenty Twenty-Three
-  Version: 1.0
+Theme Name: Divi Community Child Theme
+Description: Theme enfant de Divi par Divi Community
+Author: Nadia - Developer
+Author URI: https://nadia-hazem.students-laplateforme.io
+Template: Divi
+Version: 1.1
 */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Poppins&display=swap');
+
+/*
+  ____ _____     _____      ____ ___  __  __ __  __ _   _ _   _ ___ _______   __
+ |  _ \_ _\ \   / /_ _|    / ___/ _ \|  \/  |  \/  | | | | \ | |_ _|_   _\ \ / /
+ | | | | | \ \ / / | |    | |  | | | | |\/| | |\/| | | | |  \| || |  | |  \ V /
+ | |_| | |  \ V /  | |    | |__| |_| | |  | | |  | | |_| | |\  || |  | |   | |
+ |____/___|  \_/  |___|    \____\___/|_|  |_|_|  |_|\___/|_| \_|___| |_|   |_|
+
+*/
+
+
+/* 
+** CENTRER DU CONTENU VERTICALEMENT 
+** Voir tuto : https://www.divi-community.fr/snippets-divi/centrer-du-contenu-verticalement
+*/
+
+.dc-centrer-verticalement {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	 -moz-box-orient: vertical;
+	 -moz-box-direction: normal;
+	  -ms-flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+}
+
+
+/*
+** INVERSER LE SENS DES COLONNES SUR MOBILE
+** Voir tuto : https://www.divi-community.fr/snippets-divi/inverser-ordre-des-colonnes-sur-mobile
+*/
+
+@media only screen and (max-width : 980px) {
+	.dc-inverser-colonnes--section .dc-inverser-colonnes--ligne {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-webkit-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+}
+
+
+/*
+** MENU MOBILE : en pleine largeur et le hamburger devient une croix pour fermer
+*/
+
+.et_mobile_menu {
+	margin-left: -30px;
+	padding: 5%;
+	width: calc( 100% + 60px);
+}
+
+.mobile_nav.opened .mobile_menu_bar:before {
+	content: "\4d";
+}
+
+
+/* 
+** AUGMENTER LA LARGEUR CHAMP RÉSULTAT CAPTCHA 
+** Parfois, suivant la taille du texte, certains chiffres du résultat sont masqués
+*/
+.et_pb_contact_right p input {
+	max-width: 50px;
+}
+
+
+/*
+** METTRE EXPOSANTS ET INDICES À LA BONNE TAILLE
+** Généralement, ils sont bien trop gros…
+*/
+sup, sub {
+    font-size: 70%;
+}
 
 @font-face {
     font-family: 'poppinsregular';
@@ -33,21 +117,11 @@
 
 }
 
-header {
-  width: 100%;
-  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif!important;
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
 
   font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif !important;
 }
-
-h1 { font-size: 80px!important }
-h2 { font-size: 60px }
-
-.form-follow {
-	width: 50%;
-	margin: auto;
+h5, h6 {
+	font-family: 'Poppins', sans-serif;
 }
-.cormorant {  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif !important;}
+
