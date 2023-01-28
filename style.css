@@ -3,7 +3,51 @@
   Description: Thème enfant du thème TwentyTwenty-Three 
   Author: Nadia Hazem
   Author URI: https://nadia-hazem.students@laplateforme.io
-  Template: TwentyTwenty-Three
+  Template: Twenty Twenty-Three
   Version: 1.0
 */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Poppins&display=swap');
 
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('poppins-regular-webfont.eot');
+    src: url('poppins-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('poppins-regular-webfont.woff2') format('woff2'),
+         url('poppins-regular-webfont.woff') format('woff'),
+         url('poppins-regular-webfont.svg#poppinsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cormorantregular';
+    src: url('Cormorant-Regular-webfont.eot');
+    src: url('Cormorant-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Cormorant-Regular-webfont.woff2') format('woff2'),
+         url('Cormorant-Regular-webfont.woff') format('woff'),
+         url('Cormorant-Regular-webfont.ttf') format('truetype'),
+         url('Cormorant-Regular-webfont.svg#cormorantregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+header {
+  width: 100%;
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif !important;
+}
+
+h1 { font-size: 80px!important }
+h2 { font-size: 60px }
+
+.form-follow {
+	width: 50%;
+	margin: auto;
+}
+.cormorant {  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif !important;}
