@@ -1,0 +1,1 @@
+This is a repo imposed by the school project for reference. The files depend on a Worpress and Divi installation. You can only view the site with the link below and view the source files if you are comfortable with Wordpress.
